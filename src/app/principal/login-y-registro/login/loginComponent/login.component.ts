@@ -16,6 +16,11 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    console.log('Metodo de Login');
+  }
+
+  register() {
     this.routerRouter.navigate(['register']);
   }
+
 }

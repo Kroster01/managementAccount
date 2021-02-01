@@ -16,6 +16,11 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
+    console.log('Metodo de Register');
+  }
+
+  login() {
     this.routerRouter.navigate(['login']);
   }
+
 }
