@@ -11,12 +11,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RegisterModule } from './principal/login-y-registro/register/register.module';
 import { RegisterComponent } from './principal/login-y-registro/register/registerComponent/register.component';
+import { MenuHeaderComponent } from './principal/home/menu-header/menu-header.component';
+import { SectionamdComponent } from './sections/sectionamd/sectionamd.component';
+import { SectionamdModule } from './sections/sectionamd/sectionamd.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MenuHeaderComponent,
+    SectionamdComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,8 @@ import { RegisterComponent } from './principal/login-y-registro/register/registe
     AngularMaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SectionamdModule
   ],
   providers: [],
   bootstrap: [AppComponent]

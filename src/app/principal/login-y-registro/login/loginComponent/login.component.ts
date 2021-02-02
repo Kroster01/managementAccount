@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     console.log('Metodo de Login');
+    this.routerRouter.navigate(['main']);
   }
 
   register() {

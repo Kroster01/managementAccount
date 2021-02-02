@@ -1,0 +1,27 @@
+<p>menu-header works!</p>
+
+<!-- Sidenav Desktop -->
+<mat-sidenav-container class="container">
+    <!-- side-nav -->
+    <mat-sidenav mode="side" opened class="sidenav">
+        <mat-toolbar class="toolbar">D55</mat-toolbar>
+        <!-- Elements list menu -->
+        <mat-list>
+            <mat-list-item *ngFor="let item of links">
+                <a matLine [routerLink]="item.url">{{ item.name }}</a>
+            </mat-list-item>
+            <mat-list-item class="cerrarSesion" *ngFor="let item of links2">
+                <a matLine [routerLink]="item.url">{{ item.name }}</a>
+            </mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    <!-- side-nav-content -->
+    <mat-sidenav-content>
+        <mat-toolbar class="toolbar">
+            <mat-toolbar-row>
+                <span>Angular Material Example</span>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
